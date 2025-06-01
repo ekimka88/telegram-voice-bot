@@ -64,6 +64,7 @@ async def handle_voice(message: types.Message):
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
 
+
     os.remove(temp_filename)
 
 if __name__ == '__main__':
