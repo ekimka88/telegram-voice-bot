@@ -7,35 +7,45 @@ from datetime import datetime
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-API_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
-OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY'
+# Загружаем переменные окружения
+API_TOKEN = os.getenv('API_TOKEN')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 GOOGLE_SHEET_NAME = 'VoiceTranscripts'
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
-scope = ["https://spreadsheets.google.com/feeds",
-         'https://www.googleapis.com/auth/spreadsheets',
-         "https://www.googleapis.com/auth/drive.file",
-         "https://www.googleapis.com/auth/drive"]
+# Настройка доступа к Google Sheets
+scope = [
+    "https://spreadsheets.google.com/feeds",
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+]
 creds = ServiceAccountCredentials.from_json_keyfile_name('google_creds.json', scope)
 client = gspread.authorize(creds)
 sheet = client.open(GOOGLE_SHEET_NAME).sheet1
 
+# Функция расшифровки аудио
 async def transcribe_audio(file_path):
     url = 'https://api.openai.com/v1/audio/transcriptions'
     headers = {'Authorization': f'Bearer {OPENAI_API_KEY}'}
-    files = {'file': open(file_path, 'rb'), 'model': (None, 'whisper-1')}
+    files = {
+        'file': open(file_path, 'rb'),
+        'model': (None, 'whisper-1')
+    }
     async with aiohttp.ClientSession() as session:
         async with session.post(url, headers=headers, data=files) as response:
             result = await response.json()
             return result.get('text', '')
 
+# Обработка команды /start
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
     await message.reply("Привет! Отправь голосовое сообщение, я расшифрую и передам Герману.")
 
+# Обработка голосовых сообщений
 @dp.message_handler(content_types=types.ContentType.VOICE)
 async def handle_voice(message: types.Message):
     file_info = await bot.get_file(message.voice.file_id)
