@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "extreme-surge-461415-f4",
+  "private_key_id": "76a6a2e140200111f97bd2caa4c77d0677a25c28",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC1LzLvN2p4ozlm\nd/v3uhcl+D7zKrpJ6+6ewTGjqn9m9TOPtrEtQ4dkZS2iIOTwrGmHqjmKE++Vu1eM\nrv8VZaZFwz19UVpxxb/Ycgwp9PooKn9suBZr3LDdNXs3NNxL7nhcTAyWnFLXFNUc\nV9Z+CKL1isxt1VDb5CQbZNse79O9cyo4PpVcgG9/pjgw3YERcA1dIjUujPtDrsVq\nBbW+jAoCklCZcmKwnYmzhtyxjhGhMkOk9S4pfoNuS+aMGdVgO0hffq2yK19H8nxs\nP1cPXN1mt+xqIrjmP7HShesRyoXknmDZ0+dv54zEDSEk4vhTgm3KcApoOHyFWEtq\npu10U1i7AgMBAAECggEAA6TNW2473+04bE0hbhv59zOE4JMNaAsso1izTN1S7pkj\nzlIYQhbHlEdMoaQTtpthC+9qdNJt0Q8RdazXSHDg5SpGBE0sink1oH66q+VXWpNw\nOJmDKewoSmqW7cdMXuKO3RxSbHz8VYL/vjAuCh7WWCXQcq0FkUaHS1294mNkWLz9\ng2/zrFcOiQBVKNo2qcfKsPqMOxFzJAD/QPJTdXSoH7akJFw5m/+9V8KzjY/8vtHs\nCVbP+EFG4NmUeGWV75i3NSxqX+t/IuuToIwbz9ovpYQj923t2s/kAc7vxxTrwPCO\n6z5YuIulwLtRXpnZkayFilTrXa4Zg3l1gd01MHIGIQKBgQDe8QzE7IlyMRbY4x3H\nszdScoNfJYHk4emjqFsVvRt7riEtTqXXOkcwvVosZ66rNEZFB0ZZVgDO/Lu+N5mL\nGhKCPeyI1iM+v5bgfxUm5Psz8diBzhMur/r7+2lkyfcLxSNhn+1FNZsEP3twozkW\nPCSHh73tKqE0+JOdCW7SA6Y38wKBgQDQDQdBbLccX3vq6/oWmfULkWu2QW7iC4Dn\n4sSS1xMEWh7Pk8JzVXGrBntK2Or+jEIRZ+jY5FdqOMIDbiENDhfp5EQmWSSrInDe\nVIxmjv6zOd32ipmVuNfHxKuPmagx5SZWq3nep8Z0Pm/fht2ELLcC12Oz2Xhb1TkH\n29YCQdMWGQKBgQCQ0e0FjtHKB/Fbek1CCD0Lpa+JAwhZ8hafZSGmAW307axHjitU\noFrWYmpNJhzkwdRTyuH77k4gJzSd3+gx4AHd8PPR/6htfm837dWDqoMzvwpxZ7g2\nP8K+JRbVjgyY7LqLFCRBLQ1BuSsqhBz1QKRKFfdeNK77he39uL7wVcaH2QKBgQCM\nhZA1/2D6V//Rn4suQtSA+LrAwhdLtCtf9AmDiKL+mIQg/hMjZT2+H0WdO0AVp9Rj\n/0QFYs0sIKPiPzsxnyhFwPjK0gDzWfLUKFUgXErp8Rbbk6fCubN86XhbKJSzBqxL\nc8x/t+BR2W4kkuoBgVYnJCXibutdU3oOtcwpgB472QKBgQCSOVGheubL5kWp6sYN\nr9PWib3LXnnEWM9mg9ii3JhvHIsvi/vpOwDmOlbg+TZdsXbTCCQgBG01GHOuPMMv\nWCqeOP1LuRNeVo602Ray/fJFZk14jx02LQz5+T613xjmNtJV1/FxegTwE7e2s05c\npeop2vHzGe3XnWjkI+Wq3wzKxA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "bot-transcriber@extreme-surge-461415-f4.iam.gserviceaccount.com",
+  "client_id": "104711225292960863662",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bot-transcriber%40extreme-surge-461415-f4.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
